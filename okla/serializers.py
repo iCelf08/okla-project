@@ -12,6 +12,10 @@ class FavoriteSerializer(serializers.ModelSerializer):
         model = Favorite
         fields = '__all__'
 
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ['id', 'username', 'email'] 
 
 class UserRegistrationSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)

@@ -7,4 +7,4 @@ class RecipeAdmin(admin.ModelAdmin):
 
 @admin.register(Favorite)
 class FavoriteAdmin(admin.ModelAdmin):
-    list_display = ('user', 'recipe')
+    list_display = ('user', 'favorite_recipe_id')
